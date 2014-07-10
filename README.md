@@ -24,6 +24,19 @@ print('Bumped version string {}'.format(new_version))
 
 ### Examples ###
 
+When incrementing a version, you must specify what part of the version to increment
+* Major
+* Minor
+* Micro
+* Development
+
+You must also specify what kind of release it is
+* Alpha
+* Beta
+* Candidate
+* Normal
+
+Here are some examples of how these options work.
 
 ```
 3.1.0     alpha       beta        candidate   normal
