@@ -4,6 +4,23 @@ version-bump
 Simple python module to increment version numbers.
 
 
+### Usage ###
+
+```python
+from version import Version
+
+current_version = Version(version_string = '1.2.9')
+new_version = current_version.increment_and_return_new(Version.MINOR_VERSION,
+                                                       Version.NORMAL_RELEASE,
+                                                      )
+
+print('Current version string {}'.format(current_version))
+print('Bumped version string {}'.format(new_version))
+
+# Prints this
+#   Current version string 1.2.9
+#   Bumped version string 1.3.0
+```
 
 ### Examples ###
 
